@@ -1,0 +1,53 @@
+{
+  "name": "propine_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "propine": "./lib/index.js"
+  },
+  "scripts": {
+    "typeorm": "typeorm-ts-node-commonjs",
+    "build": "tsc -p .",
+    "propine": "NODE_OPTIONS=--max-old-space-size=16384 'ts-node' src/index.ts",
+    "test": "DOTENV_CONFIG_PATH=.env.test jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/byline": "^4.2.33",
+    "@types/clear": "^0.1.2",
+    "@types/event-stream": "^4.0.0",
+    "@types/figlet": "^1.5.5",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.17",
+    "@types/pg-copy-streams": "^1.2.1",
+    "@types/stream-buffers": "^3.0.4",
+    "dotenv": "^16.0.3",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "byline": "^5.0.0",
+    "chalk": "4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.4.1",
+    "csv-parse": "^5.3.3",
+    "csv-parser": "^3.0.0",
+    "csv-split-stream": "^1.0.2",
+    "event-stream": "^4.0.1",
+    "figlet": "^1.5.2",
+    "fs-reverse": "^0.0.3",
+    "global": "^4.4.0",
+    "path": "^0.12.7",
+    "pg": "^8.8.0",
+    "pg-copy-streams": "^6.0.4",
+    "stream-buffers": "^3.0.2",
+    "typeorm": "^0.3.11"
+  }
+}
