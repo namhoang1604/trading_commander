@@ -60,7 +60,7 @@ program
   .description('Setup data')
   .action(async () => {
     const connection = await connectDB();
-    seed(connection);
+    await seed(connection);
     process.exit(0);
   });
 

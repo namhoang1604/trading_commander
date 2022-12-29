@@ -65,6 +65,10 @@ async function readAndPartitionByYear(connection: DataSource) {
   await createPartitionTransactionsTable(connection, maxTimestamp);
 }
 
+async function clearData(connection: DataSource) {
+  await connection.createQueryRunner().query('TRUNCATE transactions');
+}
+
 async function reverseTransactions() {
   const csvFilePath = path.resolve(
     __dirname,
@@ -258,6 +262,8 @@ async function multiProceedCopy(connection: DataSource, data: Buffer[]) {
 async function seed(connection: DataSource) {
   await readAndPartitionByYear(connection);
   console.log('Partition done');
+  await clearData(connection);
+  console.log('Clear data done');
   const data = await proceedData();
   console.log('Buffer data done');
   await multiProceedCopy(connection, data);
