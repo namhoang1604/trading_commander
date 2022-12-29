@@ -32,19 +32,16 @@ In development time, I faced some problems and my solutions for them:
   ```shell
   npm run typeorm migration:run -- -d ./src/database/config.ts
   ```
-- Declare command line(Optional)
-  ```shell
-  npm install -g .
-  ```
 - Seed data to import transactions from CSV file. The command will take time to run around 15 mins, please wait for it
-  ```shell
-  # For declared already
-  propine setup
-  ```
   ```shell
   # For not declare
   npm run propine -- setup
   ```
+- Declare command line(Optional)
+  ```shell
+  npm install -g .
+  ```
+
 ## Usage
 - To retrieve the latest portfolio per token
   ```shell
