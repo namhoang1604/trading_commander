@@ -59,7 +59,7 @@ In development time, I faced some problems and my solutions for them:
   ```
   ```shell
   # For not declare
-  npm run propine -- retrieve -t BTC
+  npm run trading -- retrieve -t BTC
   ```
 - To retrieve the portfolio by a date
   ```shell
@@ -68,7 +68,7 @@ In development time, I faced some problems and my solutions for them:
   ```
   ```shell
   # For not declare
-  npm run trdaing -- retrieve -d 2019-10-25
+  npm run trading -- retrieve -d 2019-10-25
   ```
 - To retrieve the portfolio by a date for a token
   ```shell
