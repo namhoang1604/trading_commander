@@ -17,7 +17,7 @@ In development time, I faced some problems and my solutions for them:
 ## Setup
 - After clone the source code, please download and unzip the transactions CSV file then move it into `src/database` or can use the command lines
   ```shell
-  curl -L https://s3-ap-southeast-1.amazonaws.com/static.propine.com/transactions.csv.zip | tar -xf - -C.
+  curl -L https://drive.google.com/file/d/1X_OjagiXYDiO3MbnpImLSkjFA70Am8B7/view?usp=sharing | tar -xf - -C.
   mv transactions.csv src/database 
   ```
 - Install and start postgres database
