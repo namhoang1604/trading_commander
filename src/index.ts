@@ -47,12 +47,12 @@ const program = createCommand();
 
 clear();
 console.log(
-  chalk.white(figlet.textSync('propine-cli', { horizontalLayout: 'full' })),
+  chalk.white(figlet.textSync('trading-cli', { horizontalLayout: 'full' })),
 );
 
 program
   .version('0.0.1')
-  .name('propine')
+  .name('trading')
   .description('A CLI for retrieve the portfolio value');
 
 program
