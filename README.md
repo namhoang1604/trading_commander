@@ -1,4 +1,4 @@
-# Propine assignment
+# Trading commander
 ## Description
 The source code is used to create a command line program that import trading transactions from CSV file, then the user can use the command to fetch the portfolio in USD.
 ## Approach
@@ -35,7 +35,7 @@ In development time, I faced some problems and my solutions for them:
 - Seed data to import transactions from CSV file. The command will take time to run around 15 mins, please wait for it
   ```shell
   # For not declare
-  npm run propine -- setup
+  npm run trading -- setup
   ```
 - Declare command line(Optional)
   ```shell
@@ -46,16 +46,16 @@ In development time, I faced some problems and my solutions for them:
 - To retrieve the latest portfolio per token
   ```shell
   # For declared already
-  propine retrieve
+  trading retrieve
   ```
   ```shell
   # For not declare
-  npm run propine -- retrieve
+  npm run trading -- retrieve
   ```
 - To retrieve the latest portfolio for a token
   ```shell
   # For declared already
-  propine retrieve -t BTC
+  trading retrieve -t BTC
   ```
   ```shell
   # For not declare
@@ -64,18 +64,18 @@ In development time, I faced some problems and my solutions for them:
 - To retrieve the portfolio by a date
   ```shell
   # For declared already
-  propine retrieve -d 2019-10-25
+  trading retrieve -d 2019-10-25
   ```
   ```shell
   # For not declare
-  npm run propine -- retrieve -d 2019-10-25
+  npm run trdaing -- retrieve -d 2019-10-25
   ```
 - To retrieve the portfolio by a date for a token
   ```shell
   # For declared already
-  propine retrieve -d 2019-10-25 -t BTC
+  trading retrieve -d 2019-10-25 -t BTC
   ```
   ```shell
   # For not declare
-  npm run propine -- retrieve -d 2019-10-25 -t BTC
+  npm run trading -- retrieve -d 2019-10-25 -t BTC
   ```
